@@ -1,0 +1,3 @@
+order:
+  path: /order_client
+  controller: App\Controller\OrderClientsController::Order

@@ -1,0 +1,23 @@
+{% include "base.html.twig" %}
+{% include "Order/structure/top_bar.html.twig" %}
+{% include "Order/structure/menu.html.twig" %}
+<main role="main" class="flex-fill">
+    <div id="container" class="container">
+        <div id="termsofuse" class="card text-center">
+            <div class="card-body">
+                <br><br>
+                <h1 id="titre-cv" class="card-title">Food-Truck.fr : Votre commande est confirmée !</h1><br><br>
+
+                <br><br>
+                <b>Effectuer une autre commande  : <a href="{{ path('order') }}" class="lien-page-error">Cliquer ici</a><br></b>
+
+                <br><br><br><br>
+
+                <br><br>
+            </div>
+        </div>
+        <div><br><br></div>
+    </div><br><br>
+</main>
+
+{% include "Order/structure/bottom.html.twig" %}

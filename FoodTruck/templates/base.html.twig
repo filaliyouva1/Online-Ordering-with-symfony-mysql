@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+        <!-- Latest compiled and minified CSS -->
+
+        <link href="{{ asset('styles/order.css') }}" rel="stylesheet">
+
+        <link href="{{ asset('base/bootstrap/css/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('base/bootstrap/css/bootstrap-dropdownhover.min.css') }}" rel="stylesheet">
+        {# <link href="{{ asset("base/base.css") }}" rel="stylesheet" type="text/css"> #}
+        <link href="{{ asset('base/lato.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('base/icon.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('base/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('base/bootstrap/css/bootstrap-grid.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('base/bootstrap/css/bootstrap-reboot.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('base/fontawesome/css/all.min.css') }}" rel="stylesheet">
+
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+
+
+
+
+{% endblock %}
+{% block javascripts %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ asset('base/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('base/bootstrap/js/bootstrap-dropdownhover.min.js') }}"></script>
+    <script src="{{ asset('base/popper.js') }}"></script>
+    <script src="{{ asset('base/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('base/bootstrap/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('base/jquery.js') }}"></script>
+
+{% endblock %}
+</body>
+</html>
